@@ -1,11 +1,13 @@
+import java.util.ArrayList;
+
 class Student{
 
     String name, dob, username;
     int age, id;
     Course course;
-    Module[] modules;
+    ArrayList<Module> modules;
 
-    Student(String name, int age, String dob, int id, Course course, Module[] modules){
+    Student(String name, int age, String dob, int id, Course course, ArrayList<Module> modules){
         this.name = name;
         this.age = age;
         this.dob = dob;
@@ -35,7 +37,7 @@ class Student{
         this.course = course;
     }
 
-    public void setModules(Module[] modules) {
+    public void setModules(ArrayList<Module> modules) {
         this.modules = modules;
     }
 
@@ -59,7 +61,7 @@ class Student{
         return course;
     }
 
-    public Module[] getModules() {
+    public ArrayList<Module> getModules() {
         return modules;
     }
 

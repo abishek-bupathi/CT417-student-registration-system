@@ -1,17 +1,18 @@
+import org.checkerframework.checker.units.qual.A;
 import org.joda.time.DateTime;
+
+import java.util.ArrayList;
 
 class Course{
 
     String course_name;
-    Module[] modules;
-    Student[] students;
+    ArrayList<Module> modules = new ArrayList<Module>();
+    ArrayList<Student> students = new ArrayList<Student>();
     DateTime academic_start_date;
     DateTime academic_end_date;
 
-    Course(String course_name, Module[] modules, Student[] students, DateTime academic_start_date, DateTime academic_end_date){
+    Course(String course_name, DateTime academic_start_date, DateTime academic_end_date){
         this.course_name = course_name;
-        this.modules = modules;
-        this.students = students;
         this.academic_start_date = academic_start_date;
         this.academic_end_date = academic_end_date;
     }
@@ -20,12 +21,12 @@ class Course{
         this.course_name = course_name;
     }
 
-    public void setModules(Module[] modules) {
-        this.modules = modules;
+    public void addModules(Module module) {
+        modules.add(module);
     }
 
-    public void setStudents(Student[] students) {
-        this.students = students;
+    public void addStudents(Student student) {
+        students.add(student);
     }
 
     public void setAcademic_start_date(DateTime academic_start_date) {
@@ -40,11 +41,11 @@ class Course{
         return course_name;
     }
 
-    public Module[] getModules() {
+    public ArrayList<Module> getModules() {
         return modules;
     }
 
-    public Student[] getStudents() {
+    public ArrayList<Student> getStudents() {
         return students;
     }
 

@@ -1,36 +1,36 @@
+import java.util.ArrayList;
+
 class Module{
 
     String module_name;
-    Student[] students;
-    Course[] courses;
+    ArrayList<Student> students = new ArrayList<Student>();
+    ArrayList<Course> courses = new ArrayList<Course>();
 
-    Module(String module_name, Student[] students, Course[] courses){
+    Module(String module_name){
         this.module_name = module_name;
-        this.students = students;
-        this.courses = courses;
     }
 
     public void setModule_name(String module_name) {
         this.module_name = module_name;
     }
 
-    public void setStudents(Student[] students) {
-        this.students = students;
+    public void addStudent(Student student) {
+        students.add(student);
     }
 
-    public void setCourses(Course[] courses) {
-        this.courses = courses;
+    public void setCourses(Course course) {
+        courses.add(course);
     }
 
     public String getModule_name() {
         return module_name;
     }
 
-    public Student[] getStudents() {
+    public ArrayList<Student> getStudents() {
         return students;
     }
 
-    public Course[] getCourses() {
+    public ArrayList<Course> getCourses() {
         return courses;
     }
 }
