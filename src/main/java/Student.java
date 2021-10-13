@@ -14,7 +14,7 @@ class Student{
         this.id = id;
         this.course = course;
         this.modules = modules;
-        username = name.concat(Integer.toString(age));
+        username = name.concat(Integer.toString(age)); // Creating Username by concatenating Name and age
     }
 
     public void setName(String name) {
