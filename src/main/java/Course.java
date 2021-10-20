@@ -48,7 +48,7 @@ class Course{
 
         String module_names = "";
         for (Module module: modules){
-                module_names.concat(module.getModule_name() + ", ");
+                module_names.concat(module.getModuleName() + ", ");
         }
 
         return module_names;

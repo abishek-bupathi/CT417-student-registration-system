@@ -22,7 +22,7 @@ class Module{
         courses.add(course);
     }
 
-    public String getModule_name() {
+    public String getModuleName() {
         return module_name;
     }
 
