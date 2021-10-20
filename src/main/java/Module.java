@@ -33,4 +33,5 @@ class Module{
     public ArrayList<Course> getCourses() {
         return courses;
     }
+
 }

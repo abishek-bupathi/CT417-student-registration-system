@@ -1,6 +1,5 @@
 import org.checkerframework.checker.units.qual.A;
 import org.joda.time.DateTime;
-
 import java.util.ArrayList;
 
 class Course{
@@ -43,6 +42,16 @@ class Course{
 
     public ArrayList<Module> getModules() {
         return modules;
+    }
+
+    public String getModuleNames(){
+
+        String module_names = "";
+        for (Module module: modules){
+                module_names.concat(module.getModule_name() + ", ");
+        }
+
+        return module_names;
     }
 
     public ArrayList<Student> getStudents() {
