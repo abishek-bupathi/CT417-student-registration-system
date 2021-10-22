@@ -44,16 +44,6 @@ class Course{
         return modules;
     }
 
-    public String getModuleNames(){
-
-        String module_names = "";
-        for (Module module: modules){
-                module_names.concat(module.getModuleName() + ", ");
-        }
-
-        return module_names;
-    }
-
     public ArrayList<Student> getStudents() {
         return students;
     }
