@@ -18,7 +18,7 @@ class Module{
         students.add(student);
     }
 
-    public void setCourses(Course course) {
+    public void addCourse(Course course) {
         courses.add(course);
     }
 

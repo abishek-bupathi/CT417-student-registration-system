@@ -20,11 +20,11 @@ class Course{
         this.course_name = course_name;
     }
 
-    public void addModules(Module module) {
+    public void addModule(Module module) {
         modules.add(module);
     }
 
-    public void addStudents(Student student) {
+    public void addStudent(Student student) {
         students.add(student);
     }
 
