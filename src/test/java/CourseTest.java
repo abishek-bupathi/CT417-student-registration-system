@@ -39,7 +39,7 @@ class CourseTest {
         assertEquals("ECE", course.getCourse_name());
 
         // Changing the course name
-        course.setCourse_name("CSIT");
+        course.setCourseName("CSIT");
         // Checking the changed course name
         assertEquals("CSIT", course.getCourse_name());
 

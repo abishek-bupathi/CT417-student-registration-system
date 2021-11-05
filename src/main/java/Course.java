@@ -1,4 +1,3 @@
-import org.checkerframework.checker.units.qual.A;
 import org.joda.time.DateTime;
 import java.util.ArrayList;
 
@@ -16,7 +15,7 @@ class Course{
         this.academic_end_date = academic_end_date;
     }
 
-    public void setCourse_name(String course_name) {
+    public void setCourseName(String course_name) {
         this.course_name = course_name;
     }
 
@@ -28,11 +27,11 @@ class Course{
         students.add(student);
     }
 
-    public void setAcademic_start_date(DateTime academic_start_date) {
+    public void setAcademicStartDate(DateTime academic_start_date) {
         this.academic_start_date = academic_start_date;
     }
 
-    public void setAcademic_end_date(DateTime academic_end_date) {
+    public void setAcademicEndDate(DateTime academic_end_date) {
         this.academic_end_date = academic_end_date;
     }
 
@@ -48,11 +47,11 @@ class Course{
         return students;
     }
 
-    public DateTime getAcademic_start_date() {
+    public DateTime getAcademicStartDate() {
         return academic_start_date;
     }
 
-    public DateTime getAcademic_end_date() {
+    public DateTime getAcademicEndDate() {
         return academic_end_date;
     }
 }
